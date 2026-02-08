@@ -135,7 +135,8 @@ export default function AuroraBackground(props: AuroraProps) {
     gl.clearColor(0, 0, 0, 0)
     gl.enable(gl.BLEND)
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA)
-    gl.canvas.style.backgroundColor = 'transparent'
+    const canvas = gl.canvas as HTMLCanvasElement
+    canvas.style.backgroundColor = 'transparent'
 
     let program: Program | null = null
 
@@ -176,7 +177,7 @@ export default function AuroraBackground(props: AuroraProps) {
     })
 
     const mesh = new Mesh(gl, { geometry, program })
-    ctn.appendChild(gl.canvas)
+    ctn.appendChild(canvas)
 
     let animateId = 0
     const update = (t: number) => {
@@ -199,8 +200,8 @@ export default function AuroraBackground(props: AuroraProps) {
     return () => {
       cancelAnimationFrame(animateId)
       window.removeEventListener('resize', resize)
-      if (ctn && gl.canvas.parentNode === ctn) {
-        ctn.removeChild(gl.canvas)
+      if (ctn && canvas.parentNode === ctn) {
+        ctn.removeChild(canvas)
       }
       gl.getExtension('WEBGL_lose_context')?.loseContext()
     }

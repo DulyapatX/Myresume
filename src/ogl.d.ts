@@ -8,6 +8,7 @@ declare module 'ogl' {
 
   export class Program {
     constructor(gl: any, options?: any);
+    uniforms: Record<string, { value: any }>;
   }
 
   export class Mesh {
@@ -17,9 +18,13 @@ declare module 'ogl' {
 
   export class Geometry {
     constructor(gl: any, options?: any);
+    attributes: Record<string, any>;
   }
 
   export class Color {
     constructor(color?: string | number | number[]);
+    r: number;
+    g: number;
+    b: number;
   }
 }
