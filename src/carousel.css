@@ -1,0 +1,16 @@
+/* Adjust text color for certificate description in dark mode */
+body.dark .carousel-list .carousel-img {
+  color: #e6eef8;
+}
+
+body.dark .carousel-list .carousel-img:hover {
+  color: #ffffff;
+}
+
+body.dark .carousel-list {
+  color: #e6eef8;
+}
+
+body.dark .carousel-outer {
+  color: #e6eef8;
+}

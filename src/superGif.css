@@ -1,0 +1,29 @@
+.project-image.circle { display:flex; align-items:center; justify-content:center; }
+
+.circle-frame {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  /* make the background transparent so the GIF fills the whole circle */
+  background: transparent;
+  box-shadow: 0 14px 40px rgba(2,6,23,0.08);
+}
+
+.circle-gif {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .circle-frame { width: 220px; height: 220px; }
+}
+
+@media (max-width: 600px) {
+  .circle-frame { width: 180px; height: 180px; }
+}

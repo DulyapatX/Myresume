@@ -1,0 +1,15 @@
+{
+    "imgSrc": {
+        "_comment": "วิธีเลือกแหล่งรูป: ตั้งค่า source เป็น 'local' หรือ 'url'",
+        "_comment_local": "local: ใส่ชื่อไฟล์ที่อยู่ใน public เช่น 'profile.jpg'",
+        "_comment_url": "url: ใส่ลิงก์รูปแบบเต็ม เช่น 'https://example.com/image.jpg'",
+        "source": "local",
+        "local" : "face.jpg",
+        "url" : "https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/399119904_1008266383722886_8945337971401279306_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeESrcqpEtqpeotyhaUK2LKedX7FCplH1tl1fsUKmUfW2eZrDD2cNtJmSgOKs80MbfKEUR2sqV1j0ZxNA29wRDo3&_nc_ohc=Fw3z99nLB-8Q7kNvwFiDoem&_nc_oc=Adm4cESV3uekCitl7VD1Vjdk424hg3rt4zC7P8j9rPxZUNHYk5lpPKR5kStCfhpNswr27EZJ4R4C394MnWu7BtWB&_nc_zt=23&_nc_ht=scontent.fbkk5-5.fna&_nc_gid=BJsY5v4AV22ru2NjperXcg&oh=00_AfvAdElAmbA6XgYSh1pKsvo3mwC44CI0sG2Bw6xI3mXS3Q&oe=69893E2A"
+    },
+"certificates": [
+  "toeic.jpg",
+  "เกียรติบัตร UX UI.png",
+  "Transcript.jpg"
+]
+}
