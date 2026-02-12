@@ -9,7 +9,7 @@ export default function Footer() {
 
         <div className="footer-links">
           <a href="mailto:dulyapatj@gmail.com">Contact</a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/DulyapatX" target="_blank" rel="noreferrer">GitHub</a>
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Back to top</a>
         </div>
       </div>
